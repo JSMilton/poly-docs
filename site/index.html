@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Poly 2 Users Manual</title>
+        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href=".">Poly 2 Users Manual</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#nodes">Nodes</a></li>
+            <li><a href="#node-parameters">Node Parameters</a></li>
+            <li><a href="#randomising-nodes">Randomising Nodes</a></li>
+        <li class="main "><a href="#the-grid">The Grid</a></li>
+        <li class="main "><a href="#patterns">Patterns</a></li>
+            <li><a href="#pattern-editing">Pattern Editing</a></li>
+        <li class="main "><a href="#keyboard">Keyboard</a></li>
+            <li><a href="#random-mode">Random Mode</a></li>
+            <li><a href="#sequence-mode">Sequence Mode</a></li>
+            <li><a href="#midi-mode">MIDI Mode</a></li>
+        <li class="main "><a href="#sampler">Sampler</a></li>
+            <li><a href="#loading-sounds">Loading Sounds</a></li>
+            <li><a href="#lfo">LFO</a></li>
+            <li><a href="#sample-offsets">Sample Offsets</a></li>
+            <li><a href="#copy-and-paste">Copy and Paste</a></li>
+            <li><a href="#crossfading">Crossfading</a></li>
+            <li><a href="#envelope-length">Envelope Length</a></li>
+        <li class="main "><a href="#fx">FX</a></li>
+        <li class="main "><a href="#mixer">Mixer</a></li>
+        <li class="main "><a href="#midi">MIDI</a></li>
+            <li><a href="#track-out">Track Out</a></li>
+            <li><a href="#keyboard_1">Keyboard</a></li>
+            <li><a href="#node-midi-cc-out">Node MIDI CC Out</a></li>
+            <li><a href="#midi-learn">MIDI Learn</a></li>
+            <li><a href="#importing-midi-configurations">Importing MIDI Configurations</a></li>
+        <li class="main "><a href="#managing-files-and-importing-audio">Managing Files and Importing Audio</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="nodes"><strong>Nodes</strong></h2>
+<p>Tap anywhere in the big circle to add a node. Each node represents a sound or a MIDI note, with the color of the node controlling which sampler / channel the node uses.</p>
+<p>The closer a node is to the middle, the faster it will repeat.</p>
+<hr />
+<h4 id="node-parameters"><strong>Node Parameters</strong></h4>
+<p>The buttons around the big circle represent different parameters that can be applied to each node. Each half of the big circle is a slider that is used to change these node parameters.</p>
+<p>See the quick reference (the question mark button in the menu bar) for a description of what each parameter does.</p>
+<p><strong>Double tap</strong> a parameter button to reset that parameter for all nodes. <strong>Long pressing</strong> a button will reset that parameter for the selected colors nodes only.</p>
+<hr />
+<h4 id="randomising-nodes"><strong>Randomising Nodes</strong></h4>
+<p>The controls to the right of the node screen can dramatically affect the the sound of Poly. These controls can randomise the position and color of the nodes, as well as randomising the selected parameter for each node. <strong>Tapping and holding</strong> the randomise parameter button will apply the effect to the selected colors nodes only.</p>
+<p>When the position and color of the nodes is in a randomised state a plus icon will appear to the left of the button. <strong>Sliding your finger over to this button will copy the randomised nodes to a new pattern.</strong></p>
+<h2 id="the-grid"><strong>The Grid</strong></h2>
+<p>The playback position of each node is determined by its position on the grid. Each subdivision starts from 12 o'clock and works clockwise.</p>
+<p>For instance, the 4th ring from the middle has 4 positions and the first position to play starts at 12 o'clock. This node will play again after 4 pulses, with the length of a pulse being determined by the patterns quantise settings.</p>
+<p>You can have more than one node on a single position.</p>
+<p>Use the <strong>Grid Icon</strong> on the left of the node screen to turn the grid on and off.</p>
+<h2 id="patterns"><strong>Patterns</strong></h2>
+<p>The pattern menu can be found by toggling the <strong>Pattern Button</strong> in the bottom right corner of the node view. These patterns represent different configurations of nodes.</p>
+<p>You can have up to 16 different patterns for any project.</p>
+<p>On the left you can find the controls for each pattern, whilst on the right you can find the controls for selecting different patterns. There is a <strong>Quick Copy</strong> button above the pattern selectors which will copy the current pattern to the next available pattern, without stopping playback.</p>
+<hr />
+<h4 id="pattern-editing"><strong>Pattern Editing</strong></h4>
+<p>Patterns can be copied and pasted between each other using the buttons on the left of the pattern menu. There is also a clear button for removing all the nodes from a pattern.</p>
+<p><strong>It is also possible to paste and clear only the selected colors nodes.</strong> This is achieved the same way as randomising / resetting the selected colors node parameters, by long pressing the paste and clear buttons. The copy button will always copy the whole pattern. This allows you to perform edits to specific colors of nodes without having to alter a whole pattern.</p>
+<h2 id="keyboard"><strong>Keyboard</strong></h2>
+<p>Each node will select its pitch based on the keyboard. There are three modes a keyboard can be set to: <strong>Random, Sequence and MIDI</strong>.</p>
+<hr />
+<h4 id="random-mode"><strong>Random Mode</strong></h4>
+<p>Each node will select a pitch from the selected keys at random everytime it plays.</p>
+<hr />
+<h4 id="sequence-mode"><strong>Sequence Mode</strong></h4>
+<p>Each node will select the next pitch in the sequence. Once a pitch has been selected, the sequence moves on to the next step and the next time a node plays it will select that pitch.</p>
+<hr />
+<h4 id="midi-mode"><strong>MIDI Mode</strong></h4>
+<p>The keyboards selected pitches are controlled via <strong>external MIDI</strong>. Note on messages cause a pitch to be selected, whilst note off messages remove that pitch. The keyboard is locked to 2 octaves, but you can use any 2 consecutive octaves to control it.</p>
+<p>You can optionally choose to apply the note ons velocity to the node as well, although this will override the velocity settings that come from Poly. See the <strong>Keyboard</strong> section of the <strong>MIDI settings menu</strong> to configure this.</p>
+<h2 id="sampler"><strong>Sampler</strong></h2>
+<p>This is where you can control the sound that is produced by each color. All samplers have 8 voices of polyphony, but can be set to mono mode for sounds with lots of bass.</p>
+<hr />
+<h4 id="loading-sounds"><strong>Loading Sounds</strong></h4>
+<p>Sounds can be loaded into the sampler by <strong>tapping on the waveform</strong>. This will display the sound selection menu. From here you can load a new sample into the sampler, or you can load a collection of sounds (a kit) into all samplers.</p>
+<p><strong>Custom kits can be saved from within the Kits menu.</strong></p>
+<hr />
+<h4 id="lfo"><strong>LFO</strong></h4>
+<p>The LFO is a constant rate from the moment the sequencer starts. This means it does not retrigger with each sound.</p>
+<hr />
+<h4 id="sample-offsets"><strong>Sample Offsets</strong></h4>
+<p>Each samples start and end points can be adjusted by using the markers on the waveform. These end points also determine the loop points for that sample.</p>
+<hr />
+<h4 id="copy-and-paste"><strong>Copy and Paste</strong></h4>
+<p>Samplers can be copied and pasted between each other. It's possible to paste just a samplers settings, without pasting the audio file.</p>
+<hr />
+<h4 id="crossfading"><strong>Crossfading</strong></h4>
+<p>Looping samples can have a crossfade effect applied to them. This is useful for smoothing out any clicks that can be caused by having a loop point on a non zero crossing. It also allows you to create pad sounds out of any audio sample.</p>
+<hr />
+<h4 id="envelope-length"><strong>Envelope Length</strong></h4>
+<p>The envelope lengths (attack, sustain, release) are displayed as a maximum value. However, <strong>a node can alter this using it's own length parameter.</strong> For example, if a node has a length of 50%, all the envelopes settings will be halved.  </p>
+<h2 id="fx"><strong>FX</strong></h2>
+<p>These are the global FX settings for each project. The delay and reverb are send effects, whilst the distortion and EQ are global effects.</p>
+<p>The FX chain is <em>Sends &gt; Distortion &gt; EQ</em></p>
+<h2 id="mixer"><strong>Mixer</strong></h2>
+<p>These are the mixer settings for each sampler. There is a limiter at the very end of the processing chain to prevent overloading. A small red dot will appear next to the master level knob to show when the limiter is taking effect. The master level can be used as the input gain for the limiter.</p>
+<h2 id="midi"><strong>MIDI</strong></h2>
+<p>Poly supports external, network and virtual MIDI. Note, velocity and CC events can be both sent and received, whilst clock messages can only be received.</p>
+<hr />
+<h4 id="track-out"><strong>Track Out</strong></h4>
+<p>Each color can be configured to send events to a specific MIDI destination and channel. CC message and notes can be enabled or disabled here. If you want a color to only send MIDI, you can disable audio processing from here too.</p>
+<p>The length of a MIDI note is set to it's maximum here. The actual length can be adjusted on a per node basis, using the length parameter of that node.</p>
+<hr />
+<h4 id="keyboard_1"><strong>Keyboard</strong></h4>
+<p>These are the controls for each colors keyboard when it is MIDI mode. If velocity is enabled, the velocity of each note in will be applied to the node that selects it. This will override the nodes own velocity setting.</p>
+<hr />
+<h4 id="node-midi-cc-out"><strong>Node MIDI CC Out</strong></h4>
+<p>Nodes can be configured to send CC out messages. Each node parameter can be assigned a MIDI CC number and will send an event between 0 - 127, depending on the parameter value for that node.</p>
+<p>For assigning external controls to Poly's CC out messages, you can activate MIDI Learn mode from the transport and then <strong>double tap the node parameter button</strong>. This will send a CC message to any connected receivers.
+  Use the <strong>Track Out</strong> menu to configure the destination for CC messages.</p>
+<hr />
+<h4 id="midi-learn"><strong>MIDI Learn</strong></h4>
+<p>Some controls in Poly can be assigned to receive MIDI CC messages. Activate MIDI learn mode from the transport bar and all assignable controls will now show a plus icon. When the icon is red, that means a control is ready to be assigned, when it is green it means it has already been assigned. A white icon means the control is in a neutral state.</p>
+<hr />
+<h4 id="importing-midi-configurations"><strong>Importing MIDI Configurations</strong></h4>
+<p>MIDI settings in Poly are saved on a per project basis. However, a projects settings can be imported to any new project using the <strong>Import</strong> button in the MIDI menu.</p>
+<h2 id="managing-files-and-importing-audio"><strong>Managing Files and Importing Audio</strong></h2>
+<p>The <strong>Files</strong> menu can be used to import audio from either the iOS Files app or the browser based WIFI transfer. WIFI transfer is great for getting files from your desktop into Poly.  </p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.0.4
+Build Date UTC : 2019-10-15 15:10:52
+-->
