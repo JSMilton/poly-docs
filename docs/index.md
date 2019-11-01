@@ -43,6 +43,9 @@
   Patterns can be copied and pasted between each other using the buttons on the left of the pattern menu. There is also a clear button for removing all the nodes from a pattern.
 
   **It is also possible to paste and clear only the selected colors nodes.** This is achieved the same way as randomising / resetting the selected colors node parameters, by long pressing the paste and clear buttons. The copy button will always copy the whole pattern. This allows you to perform edits to specific colors of nodes without having to alter a whole pattern.
+  ---
+#### **Pattern FX**
+  There are 4 FX configurations available for each pattern to choose from. These FX slots can be populated from the FX page. Each pattern can store an FX slot and upon changing to that pattern, the corresponding FX configuration will be selected.
 
 ## **Keyboard**
   Each node will select its pitch based on the keyboard. There are three modes a keyboard can be set to: **Random, Sequence and MIDI**.
@@ -84,7 +87,7 @@
   The envelope lengths (attack, sustain, release) are displayed as a maximum value. However, **a node can alter this using it's own length parameter.** For example, if a node has a length of 50%, all the envelopes settings will be halved.  
 
 ## **FX**
-  These are the global FX settings for each project. The delay and reverb are send effects, whilst the distortion and EQ are global effects.
+  These are the global FX settings for each project. The delay and reverb are send effects, whilst the distortion and EQ are global effects. The four configurations can be assigned to individual patterns.
 
   The FX chain is *Sends > Distortion > EQ*
 
@@ -115,4 +118,13 @@
   MIDI settings in Poly are saved on a per project basis. However, a projects settings can be imported to any new project using the **Import** button in the MIDI menu.
 
 ## **Managing Files and Importing Audio**
-  The **Files** menu can be used to import audio from either the iOS Files app or the browser based WIFI transfer. WIFI transfer is great for getting files from your desktop into Poly.  
+  The **Files** menu can be used to import audio from either the iOS Files app or the browser based WIFI transfer. WIFI transfer is great for getting files from your desktop into Poly.
+
+## **Performance**
+  You can change some of the apps behaviour from here. 
+  ---
+#### **Use Pattern FX** ####
+  Using the pattern FX will mean that when a pattern is selected, the patterns FX configuraton will also be selected. Otherwise, the configuration remains the same when the pattern is changed.
+  ---
+#### **Quantise note lengths** ####
+  A nodes length will be quantised to a multiple of 8. So 12.5%, 25%, 37.5% etc. This is good for creating exact multiples of length and works very well with tempo synced MIDI note lengths.
