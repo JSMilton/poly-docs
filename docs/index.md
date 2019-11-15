@@ -4,6 +4,8 @@
 
   The closer a node is to the middle, the faster it will repeat.
 
+  **Swipe down** on a color to enable / disable all the nodes of that color. This differs from the mixers mute function in that it allows currently playing notes to finish, rather than immediately turning off all sound from that color.
+
   ---
 
 #### **Node Parameters**
@@ -126,5 +128,8 @@
 #### **Use Pattern FX** ####
   Using the pattern FX will mean that when a pattern is selected, the patterns FX configuraton will also be selected. Otherwise, the configuration remains the same when the pattern is changed.
   ---
-#### **Quantise note lengths** ####
+#### **Quantise Note Lengths** ####
   A nodes length will be quantised to a multiple of 8. So 12.5%, 25%, 37.5% etc. This is good for creating exact multiples of length and works very well with tempo synced MIDI note lengths.
+  ---
+#### **MIDI Mixer** ####
+  The mixers volume, solo and mute functions will affect outgoing MIDI. The volume affects MIDI velocity, scaling the outgoing values based on the mixer setting.
