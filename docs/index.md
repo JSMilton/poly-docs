@@ -4,7 +4,7 @@
 
   The closer a node is to the middle, the faster it will repeat.
 
-  **Swipe down** on a color to enable / disable all the nodes of that color. This differs from the mixers mute function in that it allows currently playing notes to finish, rather than immediately turning off all sound from that color.
+  **Swipe up and down** on a color to mute / solo all the nodes of that color. This differs from the mixers mute / solo functions in that it allows currently playing notes to finish, rather than immediately turning off all sound from that color.
 
   ---
 
@@ -60,9 +60,11 @@
   Each node will select the next pitch in the sequence. Once a pitch has been selected, the sequence moves on to the next step and the next time a node plays it will select that pitch.
   ---
 #### **MIDI Mode**
-  The keyboards selected pitches are controlled via **external MIDI**. Note on messages cause a pitch to be selected, whilst note off messages remove that pitch. The keyboard is locked to 2 octaves, but you can use any 2 consecutive octaves to control it.
+  The keyboards selected pitches are controlled via **external MIDI**. Note on messages cause a pitch to be selected, whilst note off messages remove that pitch. The keyboard is locked to 6 octaves, from C1 to C7.
 
-  You can optionally choose to apply the note ons velocity to the node as well, although this will override the velocity settings that come from Poly. See the **Keyboard** section of the **MIDI settings menu** to configure this.
+  You can optionally choose to apply the note ons velocity to the node as well, although this will **override the velocity** settings that come from Poly.
+
+  Latch mode will cause the notes to stay on despite any following note off messages. To turn the note off, send another note on message.
 
 ## **Sampler**
 
@@ -103,9 +105,6 @@
   Each color can be configured to send events to a specific MIDI destination and channel. CC message and notes can be enabled or disabled here. If you want a color to only send MIDI, you can disable audio processing from here too.
 
   The length of a MIDI note is set to it's maximum here. The actual length can be adjusted on a per node basis, using the length parameter of that node.
-  ---
-#### **Keyboard**
-  These are the controls for each colors keyboard when it is MIDI mode. If velocity is enabled, the velocity of each note in will be applied to the node that selects it. This will override the nodes own velocity setting.
   ---
 #### **Node MIDI CC Out**
   Nodes can be configured to send CC out messages. Each node parameter can be assigned a MIDI CC number and will send an event between 0 - 127, depending on the parameter value for that node.
