@@ -41,6 +41,8 @@
 
   On the left you can find the controls for each pattern, whilst on the right you can find the controls for selecting different patterns. There is a **Quick Copy** button above the pattern selectors which will copy the current pattern to the next available pattern, without stopping playback.
 
+  To remove the quantise for the grid, use the **Unlock Icons** on the left side of the screen. These icons represent unlocking the quantise for gaps between rings, as well as spacing around the same ring.
+
   ---
 
 #### **Pattern Editing**
