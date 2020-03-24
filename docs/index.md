@@ -134,7 +134,7 @@
   Use the **Track Out** menu to configure the destination for CC messages.
   ---
 #### **MIDI Learn**
-  Some controls in Poly can be assigned to receive MIDI CC messages. Activate MIDI learn mode from the transport bar and all assignable controls will now show a plus icon. When the icon is red, that means a control is ready to be assigned, when it is green it means it has already been assigned. A white icon means the control is in a neutral state.
+  Some controls in Poly can be assigned to receive MIDI CC messages. Activate MIDI learn mode from the transport bar and all assignable controls will now show a plus icon. When the icon is red, that means a control is ready to be assigned, when it is green it means it has already been assigned. A white icon means the control is in a neutral state. MIDI learn is only available on the Pattern, Sampler, FX and Mixer screens.
   ---
 #### **Importing MIDI Configurations**
   MIDI settings in Poly are saved on a per project basis. However, a projects settings can be imported to any new project using the **Import** button in the MIDI menu.
@@ -153,3 +153,11 @@
   ---
 #### **MIDI Mixer** ####
   The mixers volume, solo and mute functions will affect outgoing MIDI. The volume affects MIDI velocity, scaling the outgoing values based on the mixer setting.
+
+## **Background Audio**
+  Poly will automatically detect if audio needs to remain playing in the background. The rules for this are as follows:
+  
+* The app is connected Audiobus or Inter App audio
+* The app has Ableton Link connections
+* MIDI clock is enabled
+* The sequencer is playing and the currently selected pattern is populated with nodes 
