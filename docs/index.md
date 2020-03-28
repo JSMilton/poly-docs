@@ -6,6 +6,8 @@
 
   **Swipe up and down** on a color to mute / solo all the nodes of that color. This differs from the mixers mute / solo functions in that it allows currently playing notes to finish, rather than immediately turning off all sound from that color.
 
+  **Double tap** on a color to lock / unlock all nodes of that color. If any nodes are locked then, the remaining ones will become locked. If all nodes are locked, then they will all become unlocked.
+
   **Double tap** a node to lock it in place. This will prevent it from being moved, rotated or randomised.
 
   ---
